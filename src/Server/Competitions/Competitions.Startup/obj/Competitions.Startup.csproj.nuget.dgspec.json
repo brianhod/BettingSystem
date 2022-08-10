@@ -1,0 +1,813 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Competitions\\Competitions.Startup\\Competitions.Startup.csproj": {}
+  },
+  "projects": {
+    "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Common\\Common.Application\\Common.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Common\\Common.Application\\Common.Application.csproj",
+        "projectName": "BettingSystem.Application.Common",
+        "projectPath": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Common\\Common.Application\\Common.Application.csproj",
+        "packagesPath": "C:\\Users\\brian.hodgson\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Common\\Common.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\brian.hodgson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Common\\Common.Domain\\Common.Domain.csproj": {
+                "projectPath": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Common\\Common.Domain\\Common.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[10.4.0, )"
+            },
+            "MassTransit.AspNetCore": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Common\\Common.Domain\\Common.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Common\\Common.Domain\\Common.Domain.csproj",
+        "projectName": "BettingSystem.Domain.Common",
+        "projectPath": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Common\\Common.Domain\\Common.Domain.csproj",
+        "packagesPath": "C:\\Users\\brian.hodgson\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Common\\Common.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\brian.hodgson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Bogus": {
+              "target": "Package",
+              "version": "[34.0.1, )"
+            },
+            "FakeItEasy": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "FakeItEasy.Analyzer.CSharp": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.5.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.1.0, )"
+            },
+            "Scrutor": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Common\\Common.Infrastructure\\Common.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Common\\Common.Infrastructure\\Common.Infrastructure.csproj",
+        "projectName": "BettingSystem.Infrastructure.Common",
+        "projectPath": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Common\\Common.Infrastructure\\Common.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\brian.hodgson\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Common\\Common.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\brian.hodgson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Common\\Common.Application\\Common.Application.csproj": {
+                "projectPath": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Common\\Common.Application\\Common.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AspNetCore.HealthChecks.Rabbitmq": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "AspNetCore.HealthChecks.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "AspNetCore.HealthChecks.UI.Client": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Hangfire.AspNetCore": {
+              "target": "Package",
+              "version": "[1.7.28, )"
+            },
+            "Hangfire.Core": {
+              "target": "Package",
+              "version": "[1.7.28, )"
+            },
+            "Hangfire.SqlServer": {
+              "target": "Package",
+              "version": "[1.7.28, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "SixLabors.ImageSharp": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Common\\Common.Web\\Common.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Common\\Common.Web\\Common.Web.csproj",
+        "projectName": "BettingSystem.Web.Common",
+        "projectPath": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Common\\Common.Web\\Common.Web.csproj",
+        "packagesPath": "C:\\Users\\brian.hodgson\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Common\\Common.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\brian.hodgson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Common\\Common.Infrastructure\\Common.Infrastructure.csproj": {
+                "projectPath": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Common\\Common.Infrastructure\\Common.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[10.4.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Competitions\\Competitions.Application\\Competitions.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Competitions\\Competitions.Application\\Competitions.Application.csproj",
+        "projectName": "BettingSystem.Application.Competitions",
+        "projectPath": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Competitions\\Competitions.Application\\Competitions.Application.csproj",
+        "packagesPath": "C:\\Users\\brian.hodgson\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Competitions\\Competitions.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\brian.hodgson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Common\\Common.Application\\Common.Application.csproj": {
+                "projectPath": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Common\\Common.Application\\Common.Application.csproj"
+              },
+              "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Competitions\\Competitions.Domain\\Competitions.Domain.csproj": {
+                "projectPath": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Competitions\\Competitions.Domain\\Competitions.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.1.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Competitions\\Competitions.Domain\\Competitions.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Competitions\\Competitions.Domain\\Competitions.Domain.csproj",
+        "projectName": "BettingSystem.Domain.Competitions",
+        "projectPath": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Competitions\\Competitions.Domain\\Competitions.Domain.csproj",
+        "packagesPath": "C:\\Users\\brian.hodgson\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Competitions\\Competitions.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\brian.hodgson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Common\\Common.Domain\\Common.Domain.csproj": {
+                "projectPath": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Common\\Common.Domain\\Common.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Bogus": {
+              "target": "Package",
+              "version": "[34.0.1, )"
+            },
+            "FakeItEasy": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "FakeItEasy.Analyzer.CSharp": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.5.1, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.1.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Competitions\\Competitions.Infrastructure\\Competitions.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Competitions\\Competitions.Infrastructure\\Competitions.Infrastructure.csproj",
+        "projectName": "BettingSystem.Infrastructure.Competitions",
+        "projectPath": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Competitions\\Competitions.Infrastructure\\Competitions.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\brian.hodgson\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Competitions\\Competitions.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\brian.hodgson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Common\\Common.Infrastructure\\Common.Infrastructure.csproj": {
+                "projectPath": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Common\\Common.Infrastructure\\Common.Infrastructure.csproj"
+              },
+              "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Competitions\\Competitions.Application\\Competitions.Application.csproj": {
+                "projectPath": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Competitions\\Competitions.Application\\Competitions.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.1.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Competitions\\Competitions.Startup\\Competitions.Startup.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Competitions\\Competitions.Startup\\Competitions.Startup.csproj",
+        "projectName": "BettingSystem.Startup.Competitions",
+        "projectPath": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Competitions\\Competitions.Startup\\Competitions.Startup.csproj",
+        "packagesPath": "C:\\Users\\brian.hodgson\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Competitions\\Competitions.Startup\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\brian.hodgson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Competitions\\Competitions.Infrastructure\\Competitions.Infrastructure.csproj": {
+                "projectPath": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Competitions\\Competitions.Infrastructure\\Competitions.Infrastructure.csproj"
+              },
+              "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Competitions\\Competitions.Web\\Competitions.Web.csproj": {
+                "projectPath": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Competitions\\Competitions.Web\\Competitions.Web.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.1.0, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.14.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Competitions\\Competitions.Web\\Competitions.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Competitions\\Competitions.Web\\Competitions.Web.csproj",
+        "projectName": "BettingSystem.Web.Competitions",
+        "projectPath": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Competitions\\Competitions.Web\\Competitions.Web.csproj",
+        "packagesPath": "C:\\Users\\brian.hodgson\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Competitions\\Competitions.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\brian.hodgson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Common\\Common.Web\\Common.Web.csproj": {
+                "projectPath": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Common\\Common.Web\\Common.Web.csproj"
+              },
+              "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Competitions\\Competitions.Application\\Competitions.Application.csproj": {
+                "projectPath": "C:\\Projects\\SurenextSoftware\\BettingSystem\\BettingSystem\\src\\Server\\Competitions\\Competitions.Application\\Competitions.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
